@@ -1,0 +1,284 @@
+@charset "UTF - 8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+@font-face {
+    font-family: 'FonteEnsino';
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+}
+
+
+body{
+    background-color: rgba(0,0,0,1);
+    color: rgb(255, 255, 255);
+    font-family: FonteEnsino, sans-serif;
+}
+
+/* Formatação aberta */
+
+a {
+    color: #00BFFF;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+    } 
+
+/* Formatação especifica */
+
+table#tabelaspces td {
+    border: 1px solid white;
+    padding-left: 10px;
+    
+}
+
+table#tabelaspces{
+    border: 1px solid white;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+table#tabelaspces td.ce{
+    vertical-align: middle;
+    text-align: center;
+    background-color: #1C1C1C;
+    padding-right: 4px;
+
+}
+
+table#tabelaspces td.cd{
+    vertical-align: middle;
+    text-align: left;
+    background-color: #363636;
+    padding-left: 4px;
+
+}
+
+table#tabelaspces caption {
+    font-size: 20pt;
+    font-weight: bolder;
+
+}
+
+table#tabelaspces caption span#datapequena {
+    display: block;
+    float: right;
+    font-size: 8pt;
+    margin-top: 15px;
+
+}
+
+div#Interface{
+
+    width: 900px;
+    box-shadow: 0px 0px 10px rgba(238, 238, 238,0.5);
+    margin: -20px auto 10px auto;
+    padding: 10px;
+
+}
+
+
+header#cabecalho img#icone_oculos{
+    position: relative;
+    top: -50px;
+    left: 800px;
+    width: 150px;
+    height: 150px;
+}
+
+
+
+header#cabecalho {
+    border-bottom: 1px white solid;
+    height: 200px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 110px;
+
+}
+
+header#cabecalho h1 {
+    font-family: FonteEnsino, sans-serif;
+    font-size: 30pt;
+    color: gray;
+    text-shadow: 1px 1px 1px rgba(105,105,105,0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: FonteEnsino, sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-size: 15pt;
+    color: gray;
+    text-shadow: 1px 1px 1px rgba(105,105,105,0.6);
+    padding: 0px;
+    margin-top: 0px;
+}
+
+article#noticiaprincipal h2{
+    font-size: 13;
+    font-family: FonteEnsino, sans-serif;
+    color: white;
+    /* font-weight: bold; */
+    background-color: #363636;
+    padding: 2px 5px 2px 5px;
+    margin-right: -7px;
+
+}
+
+header#cabeçalhonoticia h1 {
+    font-family: FonteEnsino, sans-serif;
+    font-size: 20pt;
+    margin-bottom: -10px;
+
+}
+header#cabeçalhonoticia h2 {
+    font-size: 13pt;
+    background-color: #000;
+    margin-top: 5px;
+
+}
+header#cabeçalhonoticia h3 {
+    font-size: 10pt;
+    margin-top: 0px;
+
+}
+/* aqui tem uma formatação gereica que pode ser colocado em uma classe */
+.direita {
+    text-align: right;
+}
+
+
+    /* Formatação de de imagens e legendas */
+    /* tem uma explicação boa daqui na area de CSS no link: https://docs.google.com/document/d/1Az-thGFNRbCub0yyU2f2T-VySlVj6IAcYhysdDlwdKE/edit */
+
+figure.foto-legenda{
+    position: relative;
+    border: 8px solid black;
+    box-shadow: 1px 1px 4px gray;
+}
+
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+
+}
+
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.4) ;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+
+}
+
+/* Formatação do Menu */
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ol {
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+    top: -270px;
+    left: 335px;
+    /* left: 1260px;  com esses numeros jogo no canto da pagina*/
+    /* top: -10px;
+    left: 500px; 
+    de quando era absolute eram esse parametros */
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #1C1C1C;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+
+}
+
+nav#menu li:hover {
+    background-color: #363636;
+
+}
+
+nav#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+
+}
+
+nav#menu h1{
+    display: none;
+}
+
+/* posições do conteudo */
+
+section#corpo{
+   display: block;
+   width: 435px; 
+   float: left;
+   border-right: 1px solid white; 
+   padding-right: 15px;
+}
+aside#complemento{
+    display: block;
+    width: 434px;
+    float: right;
+    padding-left: 15px;
+ 
+}
+
+aside#complemento h1{
+    font-family: FonteEnsino, sans-serif;
+    font-size: 20pt;
+
+}
+
+aside#complemento h2 {
+    font-size: 19pt;
+    color: white;
+    /* font-weight: bold; */
+    background-color: #363636;
+    padding: 2px 5px 2px 5px;
+    margin-right: -2px;
+    margin-left: -5px;
+
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid white; 
+    text-align: center;
+    /* decidi colocar aqui o texto central ao inves de colocar nas palavras certas pois não tera muito texto aqui*/
+
+}
+
+span#simbolo{
+    font-family: Arial, sans-serif;
+}
+
+/* uma coisa muito importante sobre colocar as coisas no site é que os pixels da area delemitada deve ser respeitados por  aqueles que residem lá, parece obivio mas não é */

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+ul#albumfotos {
+    width: 700px;
+    margin: 0, auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#albumfotos span {
+    opacity: 0;
+    text-shadow: 1px 1px 2px #000;
+    background-color: rgba(54, 54, 54, 0.6);
+    line-height: 370px;
+    padding-left: 5px ;
+    font-size: 11pt;
+
+}
+
+ul#albumfotos li:hover span {
+    opacity: 1;
+}
+
+
+ul#albumfotos li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid white;
+    box-shadow: 1px 1px 3px rgba(255, 255, 2555, 0.5);
+}
+
+
+ul#albumfotos li#foto01{
+    background: url(../_imagens/galeria-01.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+}
+
+ul#albumfotos li#foto01:hover {
+    background-position: 100% 100%;
+    background-size: 200px 200px;
+    transform: scale(1.5);
+    transition: all 0.4s ease-in;
+
+}
+
+ul#albumfotos li#foto02{
+    background: url(../_imagens/galeria-02.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px; 
+}
+
+ul#albumfotos li#foto02:hover {
+    background-position: 100% 100%;
+    background-size: 200px 200px;
+    transform: scale(1.5);
+    transition: all 0.4s ease-in;
+}
+
+ul#albumfotos li#foto03{
+    background: url(../_imagens/galeria-03.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+}
+
+ul#albumfotos li#foto03:hover {
+    background-position: 100% 100%;
+    background-size: 200px 200px;
+    transform: scale(1.5);
+    transition: all 0.4s ease-in;
+}
+
+ul#albumfotos li#foto04{
+    background: url(../_imagens/galeria-04.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px
+}
+
+ul#albumfotos li#foto04:hover {
+    background-position: 100% 100%;
+    background-size: 200px 200px;
+    transform: scale(1.5);
+    transition: all 0.4s ease-in;
+}
+
+ul#albumfotos li#foto05{
+    background: url(../_imagens/galeria-05.jpg);
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+}
+
+ul#albumfotos li#foto05:hover {
+    background-position: 100% 100%;
+    background-size: 200px 200px;
+    transform: scale(1.5);
+    transition: all 0.4s ease-in;
+}
+
+ul#albumfotos li#foto06{
+    background: url(../_imagens/galeria-06.jpg);
+    background-position: 50px 50px;
+    background-size: 400px 400px;
+    
+}
+
+ul#albumfotos li#foto06:hover {
+    background-position: 100% 100%;
+    background-size: 200px 200px;
+    transform: scale(1.5);
+    transition: all 0.4s ease-in;
+}

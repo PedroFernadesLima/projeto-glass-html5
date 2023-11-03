@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<!-- Lembrando que tem um documento explicando link: https://docs.google.com/document/d/1Az-thGFNRbCub0yyU2f2T-VySlVj6IAcYhysdDlwdKE/edit -->
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Tudo Sobre a Google Glass</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/> 
+    <link rel="stylesheet" type="text/css" href="_css/form.css">
+    <script src="_javascript/funcoes.js"></script>
+
+</head>
+
+<body>
+
+<div id="Interface">
+
+<header id="cabecalho">   
+<hgroup>
+    <h1>Google Glass</h1> 
+    <h2>A revolução do Google está chegando</h2>
+</hgroup>
+
+<img id="icone_oculos" src="_imagens/glass-oculos-preto-grd.png">
+
+<nav id="menu">
+<h1>Menu Principal</h1>
+    <ol>
+    <li onmouseover="mudafoto('_imagens/home.png')" onmouseout="mudafoto('_imagens/contato.png')"><a href="index.html" target="_self">Home</a></li>
+    <li onmouseover="mudafoto('_imagens/especificacoes.png')" onmouseout="mudafoto('_imagens/contato.png')"><a href="specs.html" target="_self">Especificações</a></li>
+    <li onmouseover="mudafoto('_imagens/fotos.png')" onmouseout="mudafoto('_imagens/contato.png')"><a href="fotos.html" target="_self">Fotos</a></li>
+    <li onmouseover="mudafoto('_imagens/multimidia.png')" onmouseout="mudafoto('_imagens/contato.png')"><a href="multimidia.html" target="_self">Multimídia</a></li>
+    <li onmouseover="mudafoto('_imagens/contato.png')" onmouseout="mudafoto('_imagens/contato.png')"><a href="fale-conosco.html" target="_self">Fale conosco</a></li>
+    </ol>
+</nav>
+
+</header> 
+
+<section id="corpo-full">
+    <article id="noticiaprincipal">
+    <header id="cabeçalhonoticia">
+    <hgroup>
+    <h3>Glass > Fale-conosco</h3>
+    <h1>Tudo sobre o Google Glass </h1>
+    <h2>Gustavo Guanabara</h2>
+    <h3 class="direita">Atualizado em 23/Abril/2013</h3>
+    </hgroup>
+    </header>
+
+        <form class="paraItem" method="post" id="forcont" oninput="calc_total()">
+            <fieldset id="usuario">
+            <legend>Identificação do Usuário</legend>
+                <p><label for="inome">Nome:</label><input type="text" name="nnome" id="inome" size="30" maxlength="30" placeholder="Coloque seu nome completo"></p>
+                <p><label for="ipassword">Senha:</label><input type="password" name="npassword" id="ipassword" size="13" maxlength="12" placeholder="Coloque uma senha"> </p>
+                <p><label for="imail">E-mail:</label><input type="email" name="nmail" id="imail" size="30" maxlength="30" placeholder="Coloque um Email"> </p>
+                <p><label for="idate">Data de Nascimento:</label><input type="date" id="idate" name="ndate"> </p>
+            </fieldset>
+
+            <fieldset id="sexo">
+                <legend>Sexo</legend>
+                <input type="radio" name="nsexo" id="imasc"> <label for="imasc">Masculino</label> &nbsp;
+                <input type="radio" name="nsexo" id="ifem"> <label for="ifem">Feminino</label> &nbsp;
+                <input type="radio" name="nsexo" id="ioutro"> <label for="ioutro">Ben 10</label> &nbsp;
+            </fieldset>
+
+            <fieldset id="endereço">
+           <legend>Endereço do Usuário</legend>
+                <p><label for="irua">Logradouro:</label><input type="text" name="nrua" id="irua" size="40" maxlength="40" placeholder="Coloque sua Rua, Travessia, Avenida..."> </p>
+                <p><label for="inumero">Número:</label><input type="number" name="nnumero" id="inumero" min="0" max="9999"></p>
+                <p><label for="iestado">Estado:</label><select name="nestado" id="iestado">
+                    <optgroup label="Grupo 1">
+                        <option selected value="Sp">São Paulo</option>
+                        <option value="Rj">Rio de Janeiro</option>
+                    </optgroup>
+
+                    <optgroup label="Grupo 2">
+                        <option value="Ba">Bahia</option>
+                        <option value="Es">Espirito Santo</option> 
+                    </optgroup>
+                    </select>
+
+                <p><label for="icidade">Cidade:</label><input type="text" name="ncidade" id="icidade" maxlength="40" size="20" placeholder="Coloque sua Cidade" list="cidade"></p>
+                <datalist id="cidade">
+                    <option value="São Paulo"></option>
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Bahia"></option>
+                    <option value="Espirito Santo"></option>
+                </datalist>
+            </fieldset>
+
+            <fieldset id="mensagem">
+            <legend> Mensagem do Usuário</legend>
+                <p><label for="igrau">Grau de Urgência: Max</label><input type="range" name="ngrau" id="igrau" min="0" max="10">Min </p>
+                <p><label for="imensagem">Mensagem:</label> <textarea id="imensagem" name="mmensagem" cols="50" rows="5" placeholder="Explique sua Urgencia"></textarea> </p>
+            </fieldset>
+
+            <fieldset id="pedido">               
+            <legend >Quero um Google Glass</legend>
+               <p><input type="checkbox" name="nquero" id="iquero" checked><label for="iquero">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                 <p><label for="icor">Cor:</label> <input type="color" name="ncor" id="icor" value="#0000ff"></p>
+                <p>Quantidade:<input type="number" name="nqtd" id="iqtd" max="100" min="1" value="1"></p>
+                <p>Preço Total: R$<input type="text" name="nprt" id="iprt" placeholder="Total a pagar" readonly></p>
+            </fieldset>
+
+            <input type="submit" value="enviar">
+            <input type="image" src="_imagens/botao-enviar.png">
+        </form>
+
+    </article>
+
+</section>
+
+<Footer id="rodape">
+    Copyright 2013 <span id="simbolo">&copy;</span> - by Gustavo Guanabara e Lord P<br>
+    <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a> | <a href="https://twitter.com/guanabara" target="_blank">Twitter</a>
+</Footer>
+
+</div>
+
+</html>
+
